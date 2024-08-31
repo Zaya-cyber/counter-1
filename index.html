@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Counter</title>
+<style>
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2em;
+  padding-top: 20%;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h1>0</h1>
+
+<button onclick="decrease()">Decrease</button>
+<button onclick="reset()">Reset</button>
+<button onclick="increase()">Increase</button>
+
+<script>
+let count = 0;
+
+function increase() {
+  count++;
+  document.querySelector("h1").innerHTML = count;
+}
+
+function decrease() {
+  count--;
+  document.querySelector("h1").innerHTML = count;
+}
+
+function reset() {
+  count = 0;
+  document.querySelector("h1").innerHTML = count;
+}
+</script>
+
+</body>
+</html>
